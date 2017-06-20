@@ -21,7 +21,7 @@ Coding Dojo da Comunidade WTTD
 
 4. Crie um alias para o script de comitar
 
-`alias comitar=bash ../comitar.sh`
+`alias comitar="bash ../comitar.sh"`
 
 5. Entre no diretorio do dojo e rode os testes
 
