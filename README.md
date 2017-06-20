@@ -1,4 +1,4 @@
-# dojo-teste
+# wttd-dojo
 
 Coding Dojo da Comunidade WTTD
 
