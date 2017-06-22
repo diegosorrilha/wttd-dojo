@@ -26,6 +26,7 @@
   - Alguns participantes não conseguiram codar (pendencias, maquina não disponível, etc)
   - Arquivo .bat :P
   - Sem cerveja
+  - Probleminhas com .gitignore
 
 
 ## Participantes
