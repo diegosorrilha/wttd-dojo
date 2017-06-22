@@ -47,4 +47,4 @@
 
 Vá até o diretório onde estão os arquivos e execute o comando:
 
-    python -m pytest test.py
+    python test_caixa_eletronico.py
