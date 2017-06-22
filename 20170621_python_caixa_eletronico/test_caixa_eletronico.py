@@ -31,6 +31,11 @@ class TestCaixaEletronico(unittest.TestCase):
         notas = saque(40)
         self.assertListEqual([20, 20], notas)
 
+    def test_saque_cinquenta_reais(self):
+        """Deve retornar uma nota de 50 """
+
+        notas = saque(50)
+        self.assertListEqual([50], notas)
 
 unittest.main()
 
