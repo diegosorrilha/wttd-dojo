@@ -10,12 +10,19 @@ def saque(valor):
     if valor == 40:
         notas = []
         max_nota = 20
-        res = 40 // max_nota
-        notas+=[max_nota] * res
+        qtd, valor = divmod(valor, max_nota)
+        notas+=[max_nota] * qtd
         return notas
 
     if valor == 30:
-        return [20, 10]
+        notas = []
+        max_nota = 20
+        qtd, valor = divmod(valor, max_nota)
+        notas += [max_nota] * qtd
+        max_nota = 10
+        qtd, valor = divmod(valor, max_nota)
+        notas += [max_nota] * qtd
+        return notas
 
     if valor == 50:
         return [50]
