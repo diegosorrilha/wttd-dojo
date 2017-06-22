@@ -37,6 +37,7 @@
 - Diego Sorrilha
 - Henrique Bastos
 - Augusto Goulart
+- Riverfount (vulgo - Vicente Marçal)
 - Levi Leal
 - Marcelo Andriolli
 - Regis Santos
