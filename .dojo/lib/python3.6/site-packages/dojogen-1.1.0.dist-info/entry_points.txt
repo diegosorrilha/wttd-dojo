@@ -1,0 +1,3 @@
+[console_scripts]
+dojogen = dojogen.dojogen:main
+

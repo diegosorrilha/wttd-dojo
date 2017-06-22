@@ -1,5 +1,5 @@
 import unittest
-from caixa_eletronico import caixa_eletronico
+from caixa_eletronico import saque
 
 """
 Desenvolva um programa que simule a entrega de notas quando um cliente efetuar um saque em um caixa eletrônico. Os requisitos básicos são os seguintes:
@@ -18,14 +18,14 @@ class TestCaixaEletronico(unittest.TestCase):
 
     def test_saque_dez_reais(self):
         """Deve sacar 10 reais"""
-        nota = caixa_eletronico(10)
-        self.assertEqual(10, nota)
+        notas = saque(10)
+        self.assertListEqual(10, notas)
 
     def test_saque_quarenta_reais(self):
         """Deve sacar 40 reais"""
-        nota = caixa_eletronico(40)
-        self.assertEqual(40, nota)
+        notas = saque(40)
+        self.assertEqual(40, notas)
 
 
 unittest.main()
-        
+
