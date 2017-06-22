@@ -17,14 +17,19 @@ Valor do Saque: R$ 80,00 – Resultado Esperado: Entregar 1 nota de R$50,00 1 no
 class TestCaixaEletronico(unittest.TestCase):
 
     def test_saque_dez_reais(self):
-        """Deve sacar 10 reais"""
+        """Deve retornar uma nota de 10 reais"""
         notas = saque(10)
-        self.assertListEqual(10, notas)
+        self.assertListEqual([10], notas)
+
+    def test_saque_trinta_reais(self):
+        """Deve retornar uman nota de 20 e uma de 10 reais """
+        notas = saque(30)
+        self.assertListEqual([20, 10], notas)
 
     def test_saque_quarenta_reais(self):
-        """Deve sacar 40 reais"""
+        """Deve retornar duas notas de 20 reais"""
         notas = saque(40)
-        self.assertEqual(40, notas)
+        self.assertListEqual([20, 20], notas)
 
 
 unittest.main()
